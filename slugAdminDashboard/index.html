@@ -17,6 +17,15 @@
             <a href="#"><img class="snail" src="/Users/jordan/Odin_JS/repos/curious-mollusk/snail.svg"
                     alt="snail in profile pointing right" height="90px" width="90px" /></a>
         </div>
+        <div class="search">
+            <input type="search" class="search-bar" aria-label="Search within the mollusk dashboard" name="search-input"
+                size="50" />
+            <button type="submit" class="search-button">
+                <img src="/Users/jordan/Odin_JS/repos/curious-mollusk/slugAdminDashboard/images/magnify.svg"
+                    alt="magnifying glass image on a button" height="30px" width="30px" />
+            </button>
+
+        </div>
         <ul class="top-header-links">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
@@ -24,90 +33,252 @@
         </ul>
     </div>
     <div class="secondary-header">
-        <div class="search-bar">
-
+        <p class="name">
+            Hi there, <br />
+            Sally Slug (@slug)
+        </p>
+        <div class="mushroom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="100%" height="100%" fill=#ad1b0e>
+                <title>mushroom</title>
+                <path
+                    d="M12,2A10,10 0 0,1 22,12A2,2 0 0,1 20,14H4A2,2 0 0,1 2,12A10,10 0 0,1 12,2M12,8A2,2 0 0,0 14,6A2,2 0 0,0 12,4A2,2 0 0,0 10,6A2,2 0 0,0 12,8M17,12A2,2 0 0,0 19,10A2,2 0 0,0 17,8A2,2 0 0,0 15,10A2,2 0 0,0 17,12M7,12A2,2 0 0,0 9,10A2,2 0 0,0 7,8A2,2 0 0,0 5,10A2,2 0 0,0 7,12M15,15L16.27,19.45L16.35,20C16.35,21.1 15.45,22 14.35,22H9.65A2,2 0 0,1 7.65,20L7.73,19.45L9,15H15Z" />
+            </svg>
         </div>
-        <div class="name">
-            <p>
-                Hi there, <br />
-                Sally Slug (@slug)
 
-            </p>
+        <div class="buttons">
+            <button class="button">New</button>
+            <button class="button">Upload</button>
+            <button class="button">Share</button>
         </div>
 
     </div>
     <div class="sidebar">
-        <p class="sidebar-header">
-            Dashboard
-        </p>
-        <div class="menu">
-            <ul>
-                <li><a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75">
-                            <title>home-heart</title>
-                            <path
-                                d="M2,12L12,3L22,12H19V20H5V12H2M12,18L12.72,17.34C15.3,15 17,13.46 17,11.57C17,10.03 15.79,8.82 14.25,8.82C13.38,8.82 12.55,9.23 12,9.87C11.45,9.23 10.62,8.82 9.75,8.82C8.21,8.82 7,10.03 7,11.57C7,13.46 8.7,15 11.28,17.34L12,18Z" />
-                        </svg>
-                        <span>Home</span>
-                    </a></li>
-                <li>
-
-                </li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Tasks</a></li>
-                <li><a href="#">Communities</a></li>
-
-            </ul>
+        <div class="sidebar-icon">
+            <img class="forest" src="/Users/jordan/Odin_JS/repos/curious-mollusk/slugAdminDashboard/images/forest.svg"
+                alt="forest icon with two pine trees" height="60px" width="60px" />
+            <p class="sidebar-header">
+                Dashboard
+            </p>
         </div>
-        <div class="settings-menu">
-            <ul>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Privacy</a></li>
-            </ul>
+
+        <div class="menu-container">
+            <div class="menu">
+
+                <div class="link-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20" width="100%" height="100%"
+                        fill="#F5F5F5">
+                        <title>home</title>
+                        <path
+                            d="M2,12L12,3L22,12H19V20H5V12H2M12,18L12.72,17.34C15.3,15 17,13.46 17,11.57C17,10.03 15.79,8.82 14.25,8.82C13.38,8.82 12.55,9.23 12,9.87C11.45,9.23 10.62,8.82 9.75,8.82C8.21,8.82 7,10.03 7,11.57C7,13.46 8.7,15 11.28,17.34L12,18Z" />
+                    </svg>
+                </div>
+                <div class="link" <a href="#">Home</a>
+                </div>
+                <div class="link-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20" width="100%" height="100%"
+                        fill="#F5F5F5">
+                        <title>profile</title>
+                        <path
+                            d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+                    </svg>
+                </div>
+                <div class="link" <a href="#">Profile</a>
+                </div>
+
+                <div class="link-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20" width="100%" height="100%"
+                        fill="#F5F5F5">
+                        <title>messages</title>
+                        <path
+                            d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z" />
+                    </svg>
+                </div>
+                <div class="link" <a href="#">Messages</a></div>
+
+
+                <div class="link-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20" width="100%" height="100%"
+                        fill="#F5F5F5">
+                        <title>history</title>
+                        <path
+                            d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
+                    </svg>
+                </div>
+                <div class="link" <a href="#">History</a></div>
+
+                <div class="link-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20" width="100%" height="100%"
+                        fill="#F5F5F5">
+                        <title>tasks</title>
+                        <path
+                            d="M16,9H21.5L16,3.5V9M7,2H17L23,8V18A2,2 0 0,1 21,20H7C5.89,20 5,19.1 5,18V4A2,2 0 0,1 7,2M3,6V22H21V24H3A2,2 0 0,1 1,22V6H3Z" />
+                    </svg>
+                </div>
+                <div class="link" <a href="#">Tasks</a></div>
+
+                <div class="link-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20" width="100%" height="100%"
+                        fill="#F5F5F5">
+                        <title>community</title>
+                        <path
+                            d="M12,5A3.5,3.5 0 0,0 8.5,8.5A3.5,3.5 0 0,0 12,12A3.5,3.5 0 0,0 15.5,8.5A3.5,3.5 0 0,0 12,5M12,7A1.5,1.5 0 0,1 13.5,8.5A1.5,1.5 0 0,1 12,10A1.5,1.5 0 0,1 10.5,8.5A1.5,1.5 0 0,1 12,7M5.5,8A2.5,2.5 0 0,0 3,10.5C3,11.44 3.53,12.25 4.29,12.68C4.65,12.88 5.06,13 5.5,13C5.94,13 6.35,12.88 6.71,12.68C7.08,12.47 7.39,12.17 7.62,11.81C6.89,10.86 6.5,9.7 6.5,8.5C6.5,8.41 6.5,8.31 6.5,8.22C6.2,8.08 5.86,8 5.5,8M18.5,8C18.14,8 17.8,8.08 17.5,8.22C17.5,8.31 17.5,8.41 17.5,8.5C17.5,9.7 17.11,10.86 16.38,11.81C16.5,12 16.63,12.15 16.78,12.3C16.94,12.45 17.1,12.58 17.29,12.68C17.65,12.88 18.06,13 18.5,13C18.94,13 19.35,12.88 19.71,12.68C20.47,12.25 21,11.44 21,10.5A2.5,2.5 0 0,0 18.5,8M12,14C9.66,14 5,15.17 5,17.5V19H19V17.5C19,15.17 14.34,14 12,14M4.71,14.55C2.78,14.78 0,15.76 0,17.5V19H3V17.07C3,16.06 3.69,15.22 4.71,14.55M19.29,14.55C20.31,15.22 21,16.06 21,17.07V19H24V17.5C24,15.76 21.22,14.78 19.29,14.55M12,16C13.53,16 15.24,16.5 16.23,17H7.77C8.76,16.5 10.47,16 12,16Z" />
+                    </svg>
+                </div>
+                <div class="link" <a href="#">Community</a></div>
+
+
+
+            </div>
+            <div class="settings-menu">
+
+                <div class="link-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20" width="100%" height="100%"
+                        fill="#F5F5F5">
+                        <title>settings</title>
+                        <path
+                            d="M15.9,18.45C17.25,18.45 18.35,17.35 18.35,16C18.35,14.65 17.25,13.55 15.9,13.55C14.54,13.55 13.45,14.65 13.45,16C13.45,17.35 14.54,18.45 15.9,18.45M21.1,16.68L22.58,17.84C22.71,17.95 22.75,18.13 22.66,18.29L21.26,20.71C21.17,20.86 21,20.92 20.83,20.86L19.09,20.16C18.73,20.44 18.33,20.67 17.91,20.85L17.64,22.7C17.62,22.87 17.47,23 17.3,23H14.5C14.32,23 14.18,22.87 14.15,22.7L13.89,20.85C13.46,20.67 13.07,20.44 12.71,20.16L10.96,20.86C10.81,20.92 10.62,20.86 10.54,20.71L9.14,18.29C9.05,18.13 9.09,17.95 9.22,17.84L10.7,16.68L10.65,16L10.7,15.31L9.22,14.16C9.09,14.05 9.05,13.86 9.14,13.71L10.54,11.29C10.62,11.13 10.81,11.07 10.96,11.13L12.71,11.84C13.07,11.56 13.46,11.32 13.89,11.15L14.15,9.29C14.18,9.13 14.32,9 14.5,9H17.3C17.47,9 17.62,9.13 17.64,9.29L17.91,11.15C18.33,11.32 18.73,11.56 19.09,11.84L20.83,11.13C21,11.07 21.17,11.13 21.26,11.29L22.66,13.71C22.75,13.86 22.71,14.05 22.58,14.16L21.1,15.31L21.15,16L21.1,16.68M6.69,8.07C7.56,8.07 8.26,7.37 8.26,6.5C8.26,5.63 7.56,4.92 6.69,4.92A1.58,1.58 0 0,0 5.11,6.5C5.11,7.37 5.82,8.07 6.69,8.07M10.03,6.94L11,7.68C11.07,7.75 11.09,7.87 11.03,7.97L10.13,9.53C10.08,9.63 9.96,9.67 9.86,9.63L8.74,9.18L8,9.62L7.81,10.81C7.79,10.92 7.7,11 7.59,11H5.79C5.67,11 5.58,10.92 5.56,10.81L5.4,9.62L4.64,9.18L3.5,9.63C3.41,9.67 3.3,9.63 3.24,9.53L2.34,7.97C2.28,7.87 2.31,7.75 2.39,7.68L3.34,6.94L3.31,6.5L3.34,6.06L2.39,5.32C2.31,5.25 2.28,5.13 2.34,5.03L3.24,3.47C3.3,3.37 3.41,3.33 3.5,3.37L4.63,3.82L5.4,3.38L5.56,2.19C5.58,2.08 5.67,2 5.79,2H7.59C7.7,2 7.79,2.08 7.81,2.19L8,3.38L8.74,3.82L9.86,3.37C9.96,3.33 10.08,3.37 10.13,3.47L11.03,5.03C11.09,5.13 11.07,5.25 11,5.32L10.03,6.06L10.06,6.5L10.03,6.94Z" />
+                    </svg>
+                </div>
+                <div class="link" <a href="#">Settings</a></div>
+
+                <div class="link-svg">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20" width="100%" height="100%"
+                        fill="#F5F5F5">
+                        <title>support</title>
+                        <path
+                            d="M13,8A4,4 0 0,1 9,12A4,4 0 0,1 5,8A4,4 0 0,1 9,4A4,4 0 0,1 13,8M17,18V20H1V18C1,15.79 4.58,14 9,14C13.42,14 17,15.79 17,18M20.5,14.5V16H19V14.5H20.5M18.5,9.5H17V9A3,3 0 0,1 20,6A3,3 0 0,1 23,9C23,9.97 22.5,10.88 21.71,11.41L21.41,11.6C20.84,12 20.5,12.61 20.5,13.3V13.5H19V13.3C19,12.11 19.6,11 20.59,10.35L20.88,10.16C21.27,9.9 21.5,9.47 21.5,9A1.5,1.5 0 0,0 20,7.5A1.5,1.5 0 0,0 18.5,9V9.5Z" />
+                    </svg>
+                </div>
+                <div class="link" <a href="#">Support</a></div>
+
+                <div class="link-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20" width="100%" height="100%"
+                        fill="#F5F5F5">
+                        <title>privacy</title>
+                        <path
+                            d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.1 14.8,9.5V11C15.4,11 16,11.6 16,12.3V15.8C16,16.4 15.4,17 14.7,17H9.2C8.6,17 8,16.4 8,15.7V12.2C8,11.6 8.6,11 9.2,11V9.5C9.2,8.1 10.6,7 12,7M12,8.2C11.2,8.2 10.5,8.7 10.5,9.5V11H13.5V9.5C13.5,8.7 12.8,8.2 12,8.2Z" />
+                    </svg>
+                </div>
+                <div class="link" <a href="#">Privacy</a></div>
+            </div>
         </div>
 
     </div>
     <div class="articles">
-        <div class="card">
-            <p class="title">Article Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        <h3>Your Projects</h3>
+        <h3>Announcements</h3>
+        <div class="article-cards">
+            <div class="card">
+                <h3>Article Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
+            <div class="card">
+                <h3>Article Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
+            <div class="card">
+                <h3>Article Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
+            <div class="card">
+                <h3>Article Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
+            <div class="card">
+                <h3>Article Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
+            <div class="card">
+                <h3>Article Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            </div>
         </div>
-        <div class="card">
-            <p class="title">Article Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-            <p class="title">Article Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-            <p class="title">Article Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-            <p class="title">Article Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
-        <div class="card">
-            <p class="title">Article Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-        </div>
+        <div class="right-sidebar">
+            <div class="announcements">
+                <div class="card">
+                    <h4>Site Maintenance</h4>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse placerat natoque; congue
+                        condimentum
+                        felis
+                        taciti feugiat. Parturient phasellus himenaeos egestas suscipit ultricies.</p>
+                </div>
+                <div class="card">
+                    <h4>Community Updates</h4>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse placerat natoque; congue
+                        condimentum
+                        felis
+                        taciti feugiat. Parturient phasellus himenaeos egestas suscipit ultricies.</p>
 
-    </div>
-    <div class="annoucements">
+                </div>
+                <div class="card">
+                    <h4>Updated Privacy Policy</h4>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse placerat natoque; congue
+                        condimentum
+                        felis
+                        taciti feugiat. Parturient phasellus himenaeos egestas suscipit ultricies.</p>
 
-    </div>
-    <div class="trending">
-
+                </div>
+            </div>
+            <h3>Trending</h3>
+            <div class="trending">
+                <div class="user">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="100%" height="100%"
+                            fill=#ad1b0e>
+                            <title>mushroom</title>
+                            <path
+                                d="M12,2A10,10 0 0,1 22,12A2,2 0 0,1 20,14H4A2,2 0 0,1 2,12A10,10 0 0,1 12,2M12,8A2,2 0 0,0 14,6A2,2 0 0,0 12,4A2,2 0 0,0 10,6A2,2 0 0,0 12,8M17,12A2,2 0 0,0 19,10A2,2 0 0,0 17,8A2,2 0 0,0 15,10A2,2 0 0,0 17,12M7,12A2,2 0 0,0 9,10A2,2 0 0,0 7,8A2,2 0 0,0 5,10A2,2 0 0,0 7,12M15,15L16.27,19.45L16.35,20C16.35,21.1 15.45,22 14.35,22H9.65A2,2 0 0,1 7.65,20L7.73,19.45L9,15H15Z" />
+                        </svg>
+                    </div>
+                    <div class="user-name">
+                        <p> <strong>@slug</strong></p>
+                        <p>Sally Slug</p>
+                        <p>Lorem ipsum odor amet</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="#c97cf2">
+                            <title>butterfly</title>
+                            <path
+                                d="M13 21H11V6L9.03 3.97L10 3L12 5L14 3L15 4L13 6V21M7 6C4.24 6 2 8.24 2 11C2 12.64 2.79 14.09 4 15H4V17C4 19.21 5.79 21 8 21C8.72 21 9.39 20.81 9.97 20.5L10 20.46V7C9.16 6.37 8.13 6 7 6M6.5 12.5L5 11L6.5 9.5L8 11L6.5 12.5M22 11C22 8.24 19.76 6 17 6C15.88 6 14.85 6.37 14 7L14 7V20.46C14.59 20.81 15.27 21 16 21C18.21 21 20 19.21 20 17V15H20C21.21 14.09 22 12.64 22 11M17.5 12.5L16 11L17.5 9.5L19 11L17.5 12.5Z" />
+                        </svg>
+                    </div>
+                    <div class="user-name">
+                        <p><strong>@flower_bug</strong></p>
+                        <p>Jamie Flower</p>
+                        <p>Lorem ipsum odor amet</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="#216e18">
+                            <title>turtle</title>
+                            <path
+                                d="M8.47,5.95C8.95,5.67 9.47,5.44 10,5.28V4C10,2.9 10.87,2 11.97,1.97C13.13,2 14,2.9 14,4V5.28C14.53,5.45 15.05,5.67 15.53,5.95L13.93,8.07H10.07L8.47,5.95M19,12C19,12.5 18.95,12.95 18.86,13.4L16.33,12.62L15.14,8.96L16.74,6.85C17.17,7.25 17.55,7.7 17.88,8.2C18.67,8.13 19.43,8.25 20.11,8.59C21.14,9.12 21.84,10.13 22,11.28L19,11.64C19,11.76 19,11.88 19,12M5,12C5,11.88 5,11.76 5,11.65L2,11.28C2.16,10.13 2.86,9.12 3.89,8.59C4.57,8.25 5.34,8.13 6.08,8.26C6.41,7.75 6.79,7.28 7.24,6.87L8.86,8.95L7.67,12.62L5.14,13.4C5.05,12.95 5,12.5 5,12M10.24,9.57H13.76L14.85,12.93L12,15L9.15,12.93L10.24,9.57M8.13,14.05L11.25,16.31V18.96C10.68,18.9 10.13,18.77 9.62,18.58L8.39,21.34C7.33,20.87 6.57,19.9 6.37,18.76C6.23,18 6.35,17.24 6.69,16.56C6.24,16.04 5.87,15.46 5.59,14.82L8.13,14.05M15.87,14.05L18.41,14.82C18.13,15.46 17.76,16.04 17.31,16.56C17.65,17.24 17.77,18 17.64,18.76C17.43,19.9 16.67,20.87 15.61,21.34L14.39,18.58C13.86,18.77 13.33,18.94 12.75,19V16.31L15.87,14.05Z" />
+                        </svg>
+                    </div>
+                    <div class="user-name">
+                        <p><strong>@sea_swimmer</strong></p>
+                        <p>John Slow</p>
+                        <p>Lorem ipsum odor amet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer"></div>
 </body>
